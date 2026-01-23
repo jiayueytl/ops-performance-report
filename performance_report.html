@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; font-size: 11pt; line-height: 1.4; }
+        .header-title { font-weight: bold; margin-bottom: 20px; text-transform: uppercase; }
+        
+        /* Main Info Table */
+        .info-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .info-table td { border: 1px solid black; padding: 4px 8px; }
+        .info-table td:first-child { width: 20%; background-color: #f9f9f9; }
+
+        .rate-section { margin: 20px 0; font-weight: bold; }
+
+        /* Performance Table */
+        .perf-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 10pt; }
+        .perf-table th { border: 1px solid black; background-color: #f2f2f2; padding: 6px; text-align: left; }
+        .perf-table td { border: 1px solid black; padding: 6px; text-align: left; }
+        
+        .total-row { font-weight: bold; }
+        .total-label { text-align: right !important; background-color: #f2f2f2; }
+
+        .footer-sig { margin-top: 40px; }
+        .sig-line { margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <div class="header-title">
+        YTL AI LABS DATA ANNOTATION PROJECT<br>
+        ANNOTATION TASK PERFORMANCE REPORT
+    </div>
+
+    <table class="info-table">
+        <tr><td>Report ID</td><td>{{ report_id }}</td></tr>
+        <tr><td>Date of Report</td><td>{{ report_date }}</td></tr>
+        <tr><td>Task Period</td><td>{{ task_period }}</td></tr>
+        <tr><td>Annotator</td><td>{{ annotator_name }}</td></tr>
+    </table>
+
+    <div class="rate-section">
+        Package Rate: RM0.80 (PER PASS IMAGE)
+    </div>
+
+    <div class="header-title" style="font-size: 10pt;">SUMMARY OF QUALITY ASSURANCE REVIEW</div>
+    <table class="perf-table">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Total Uncorrupted</th>
+                <th>Valid Format</th>
+                <th>Invalid Format</th>
+                <th>Pass Count</th>
+                <th>Fail Count</th>
+                <th>Total Fail</th>
+                <th>Fee (RM)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in projects %}
+            <tr>
+                <td>{{ row['final_image_category'] }}</td>
+                <td>{{ row['total_submitted_uncorrupted'] }}</td>
+                <td>{{ row['total_valid_format'] }}</td>
+                <td>{{ row['total_invalid_format'] }}</td>
+                <td>{{ row['total_valid_pass_count'] }}</td>
+                <td>{{ row['total_valid_fail_count'] }}</td>
+                <td>{{ row['total_fail'] }}</td>
+                <td>{{ "%.2f"|format(row['total_valid_pass_count'] * 0.8) }}</td>
+            </tr>
+            {% endfor %}
+            <tr class="total-row">
+                <td colspan="7" class="total-label">Total Fee (RM)</td>
+                <td>{{ "%.2f"|format(grand_total_fee) }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer-sig">
+        <p>I acknowledge and agree with the reviewed performance and the corresponding fee stated above.</p>
+        <p>Signed by,</p>
+        <div class="sig-line">
+            __________________________<br><br>
+            Full name: {{ annotator_name }}<br>
+            NRIC no.: 
+        </div>
+    </div>
+
+</body>
+</html>
