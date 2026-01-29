@@ -6,6 +6,11 @@ def process_data(df):
     df.columns = df.columns.str.strip()
     return df, df['name'].unique()
 
+def get_safe_name(name):
+    safe_name = str(name).upper()
+    safe_name = safe_name.replace('/','')
+    return safe_name
+
 def get_performance_context(df, name, task_period):
     """Prepares context for the Performance Report."""
     person_df = df[df['name'] == name]
@@ -17,7 +22,10 @@ def get_performance_context(df, name, task_period):
         
     person_df = person_df[person_df['total_completed']>0] if 'total_completed' in person_df.columns else person_df
     
-    safe_name = str(name).upper()
+    safe_name = get_safe_name(name)
+    
+    current_month_year = datetime.now().strftime("%b%y").upper() 
+
     return {
         "ctx": {
             "report_id": f"{safe_name.replace(' ', '_')}_Performance_{datetime.now().strftime('%Y%m%d')}",
@@ -27,7 +35,7 @@ def get_performance_context(df, name, task_period):
             "projects": person_df.to_dict('records'),
             "grand_total_fee": person_df['total_eligible_payment'].sum()
         },
-        "filename": f"{safe_name}_Performance_Report.pdf"
+        "filename": f"{safe_name}_Performance_Report_{current_month_year}.pdf"
     }
 
 def get_invoice_context(df, name, task_period):
@@ -36,7 +44,7 @@ def get_invoice_context(df, name, task_period):
     # Pulls S1-Assignee for the ID format: INV/USERNAME/JAN26
     username = str(person_df['username'].iloc[0]).upper()
     total_payable = person_df['total_eligible_payment'].sum()
-    safe_name = str(name).upper().replace(' ', '_')
+    safe_name = get_safe_name(name)
     
     current_month_year = datetime.now().strftime("%b%y").upper() 
     
