@@ -80,12 +80,12 @@ S1_PERFORMANCE_REPORT = """
             <tbody>
                 {% for row in projects %}
                 <tr>
-                    <td>{{ row['Project Name'] }}</td>
+                    <td>{{ row['project_name'] }}</td>
                     <td style="text-align: center;">{{ row['Sum of total_submitted_uncorrupted'] }}</td>
                     <td style="text-align: center;">{{ row['Sum of total_valid_pass_count'] }}</td>
                     <td style="text-align: center;">{{ row['Sum of total_valid_fail_count'] }}</td>
                     <td style="text-align: center;">{{ row['Sum of total_invalid_format'] }}</td>
-                    <td style="text-align: right;">{{ "%.2f"|format(row['Total Payable']|float) }}</td>
+                    <td style="text-align: right;">{{ "%.2f"|format(row['total_eligible_payment']|float) }}</td>
                 </tr>
                 {% endfor %}
                 <tr class="total-row">

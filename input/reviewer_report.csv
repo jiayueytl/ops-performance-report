@@ -1,0 +1,104 @@
+project_name,dataset_name,date,username,name,total_assigned,total_completed,total_done_qa,total_qaflag_pass,total_qaflag_fail,accuracy_rate,qa_sample_rate,package_type,eligible_payment_tier,payment_tier,total_payment,total_eligible_payment
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-S1CS-ImageQualityChecking-20260119-ValidFormat-193Rows,20260119,ooiruizhe,OOI RUI ZHE,193,193,39,39,0,100,20.21,1.2867,1,Tier 1 (100%),128.67,128.67
+[KuihLapis] Malay Images OCR (S1),MalayOCR-S1CS-ImageQualityChecking-20260116-ValidFormat-1010Rows-v2,20260116,ooiruizhe,OOI RUI ZHE,560,560,115,115,,100,20.54,3.7333,1,Tier 1 (100%),373.33,373.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-S1(CS)-ImageQualityChecking-20260115-ValidFormat-1572Rows,20260115,ooiruizhe,OOI RUI ZHE,300,300,62,60,2,96.77,20.67,2,1,Tier 1 (100%),200,200
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260114-Medium-74Rows-v2,20260114,ooiruizhe,OOI RUI ZHE,60,60,12,11,1,91.67,20,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260113-Medium-250Rows,20260113,ooiruizhe,OOI RUI ZHE,60,56,12,11,0,91.67,21.43,0.9333,1,Tier 1 (100%),93.33,93.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260112-Short-228Rows-v5,20260112,ooiruizhe,OOI RUI ZHE,51,45,10,10,0,100,22.22,0.75,1,Tier 1 (100%),75,75
+[KuihLapis] Malay Images OCR (S1),MalayOCR-S1CS-ImageQualityChecking-20260116-ValidFormat-1010Rows-v2,20260116,ainaruhana,AINA RUHANA BINTI ROSLAN,150,150,32,29,3,90.62,21.33,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251230-MalayOCR_551Rows,20251230,fazilah,FAZILAH BINTI SALIM,150,150,30,29,1,96.67,20,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260105-ValidFormat-716Rows,20260105,fazilah,FAZILAH BINTI SALIM,150,150,30,30,0,100,20,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-S1(CS)-ImageQualityChecking-20260115-ValidFormat-1572Rows,20260115,fazilah,FAZILAH BINTI SALIM,150,150,30,30,0,100,20,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),MalayOCR-S1CS-ImageQualityChecking-20260116-ValidFormat-1010Rows-v2,20260116,fazilah,FAZILAH BINTI SALIM,150,150,30,27,3,90,20,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260102-ValidFormat-1608Rows,20260102,munirah,Munirah binti Ramli,150,150,32,31,1,96.88,21.33,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260105-ValidFormat-716Rows,20260105,munirah,Munirah binti Ramli,150,150,34,33,1,97.06,22.67,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),MalayOCR-S1CS-ImageQualityChecking-20260116-ValidFormat-1010Rows-v2,20260116,munirah,Munirah binti Ramli,150,150,31,31,0,100,20.67,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260112-Long-9Rows-v5,20260112,ooiruizhe,OOI RUI ZHE,9,9,3,3,0,100,33.33,0.15,1,Tier 1 (100%),15,15
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Short-341Rows,20260111,ooiruizhe,OOI RUI ZHE,49,44,12,11,1,91.67,27.27,0.7333,1,Tier 1 (100%),73.33,73.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Long-52Rows,20260111,ooiruizhe,OOI RUI ZHE,11,11,5,5,0,100,45.45,0.1833,1,Tier 1 (100%),18.33,18.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Medium-331Rows,20260108,ooiruizhe,OOI RUI ZHE,20,20,5,5,0,100,25,0.3333,1,Tier 1 (100%),33.33,33.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251230-MalayOCR_551Rows,20251230,munirah,Munirah binti Ramli,149,148,31,29,2,93.55,20.95,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-S1(CS)-ImageQualityChecking-20260115-ValidFormat-1572Rows,20260115,munirah,Munirah binti Ramli,150,148,31,28,3,90.32,20.95,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S2-CS),[KuihLapis]MalayOCR-Stream2(CS)-20260107-415Row,20260107,munirah,Munirah binti Ramli,75,56,16,16,0,100,28.57,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Long-75Rows,20260108,ooiruizhe,OOI RUI ZHE,15,15,4,4,0,100,26.67,0.25,1,Tier 1 (100%),25,25
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260113-Medium-250Rows,20260113,munirah,Munirah binti Ramli,50,48,10,7,3,70,20.83,0.8333,0.4,Tier 3 (40%),83.33,33.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260114-Short-95Rows-v2,20260114,ainaruhana,AINA RUHANA BINTI ROSLAN,49,49,0,0,0,0,0,0.8167,0,Tier 4 (0%),81.67,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260113-Short-115Rows,20260113,munirah,Munirah binti Ramli,10,10,2,2,0,100,20,0.1667,1,Tier 1 (100%),16.67,16.67
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260114-Short-95Rows-v2,20260114,munirah,Munirah binti Ramli,46,46,7,7,0,100,15.22,0.7667,1,Tier 1 (100%),76.67,76.67
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Short-341Rows,20260111,munirah,Munirah binti Ramli,50,45,12,12,0,100,26.67,0.75,1,Tier 1 (100%),75,75
+[KuihLapis] Malay Images OCR (S2-CS),[KuihLapis]MalayOCR-Stream2(CS)-20260107-415Row,20260107,ooiruizhe,OOI RUI ZHE,74,70,15,15,0,100,21.43,1.1667,1,Tier 1 (100%),116.67,116.67
+[KuihLapis] Malay Images OCR (S1),MalayOCR-S1CS-ImageQualityChecking-20260116-InvalidFormat-110Rows-v2,20260116,jy,JY,110,110,0,0,0,0,0,0.7333,0,Tier 4 (0%),73.33,0
+[KuihLapis] Malay Images OCR (S1),MalayOCR-S1CS-ImageQualityChecking-20260119-InvalidFormat-110Rows-v1,20260119,jy,JY,110,110,0,0,0,0,0,0.7333,0,Tier 4 (0%),73.33,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260105-ValidFormat-716Rows,20260105,ooiruizhe,OOI RUI ZHE,266,266,54,50,4,92.59,20.3,1.7733,1,Tier 1 (100%),177.33,177.33
+[KuihLapis] Malay Images OCR (S2-CS),[KuihLapis]MalayOCR-Stream2(CS)-20260107-415Row,20260107,ainaruhana,AINA RUHANA BINTI ROSLAN,75,43,11,10,1,90.91,25.58,0.7167,1,Tier 1 (100%),71.67,71.67
+[KuihLapis] Malay Images OCR (S2-CS),[KuihLapis]MalayOCR-Stream2(CS)-20260107-415Row,20260107,fazilah,FAZILAH BINTI SALIM,73,42,11,10,0,90.91,26.19,0.7,1,Tier 1 (100%),70,70
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Short-341Rows,20260111,ainaruhana,AINA RUHANA BINTI ROSLAN,49,38,10,10,0,100,26.32,0.6333,1,Tier 1 (100%),63.33,63.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260105-ValidFormat-716Rows,20260105,ainaruhana,AINA RUHANA BINTI ROSLAN,145,95,22,22,0,100,23.16,0.6333,1,Tier 1 (100%),63.33,63.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260102-ValidFormat-1608Rows,20260102,ainaruhana,AINA RUHANA BINTI ROSLAN,149,90,22,18,4,81.82,24.44,0.6,0.8,Tier 2 (80%),60,48
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260103-ValidFormat-1632Rows,20260103,ainaruhana,AINA RUHANA BINTI ROSLAN,148,89,19,18,1,94.74,21.35,0.5933,1,Tier 1 (100%),59.33,59.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260104-ValidFormat-1110Rows,20260104,ainaruhana,AINA RUHANA BINTI ROSLAN,150,89,18,17,1,94.44,20.22,0.5933,1,Tier 1 (100%),59.33,59.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-S1(CS)-ImageQualityChecking-20260115-ValidFormat-1572Rows,20260115,ainaruhana,AINA RUHANA BINTI ROSLAN,150,88,18,15,2,83.33,20.45,0.5867,0.8,Tier 2 (80%),58.67,46.93
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260112-Short-228Rows-v5,20260112,ainaruhana,AINA RUHANA BINTI ROSLAN,60,33,8,8,0,100,24.24,0.55,1,Tier 1 (100%),55,55
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260104-ValidFormat-1110Rows,20260104,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,75,75,15,12,3,80,20,0.5,0.8,Tier 2 (80%),50,40
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251229-V2-MalayOCR_663Rows,20251229,fazilah,FAZILAH BINTI SALIM,75,75,27,26,1,96.3,36,0.5,1,Tier 1 (100%),50,50
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260103-ValidFormat-1632Rows,20260103,fazilah,FAZILAH BINTI SALIM,75,75,15,14,1,93.33,20,0.5,1,Tier 1 (100%),50,50
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260104-ValidFormat-1110Rows,20260104,fazilah,FAZILAH BINTI SALIM,75,75,15,14,1,93.33,20,0.5,1,Tier 1 (100%),50,50
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251229-V2-MalayOCR_663Rows,20251229,munirah,Munirah binti Ramli,75,75,16,14,2,87.5,21.33,0.5,0.8,Tier 2 (80%),50,40
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260103-ValidFormat-1632Rows,20260103,munirah,Munirah binti Ramli,75,75,15,15,0,100,20,0.5,1,Tier 1 (100%),50,50
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260104-ValidFormat-1110Rows,20260104,munirah,Munirah binti Ramli,75,75,16,15,1,93.75,21.33,0.5,1,Tier 1 (100%),50,50
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260104-ValidFormat-1110Rows,20260104,ooiruizhe,OOI RUI ZHE,150,150,30,30,0,100,20,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260102-ValidFormat-1608Rows,20260102,fazilah,FAZILAH BINTI SALIM,75,73,18,18,0,100,24.66,0.4867,1,Tier 1 (100%),48.67,48.67
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251230-MalayOCR_551Rows,20251230,ainaruhana,AINA RUHANA BINTI ROSLAN,59,59,15,15,0,100,25.42,0.3933,1,Tier 1 (100%),39.33,39.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260112-Short-228Rows-v5,20260112,munirah,Munirah binti Ramli,57,23,5,5,0,100,21.74,0.3833,1,Tier 1 (100%),38.33,38.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260112-Short-228Rows-v5,20260112,fazilah,FAZILAH BINTI SALIM,30,21,5,5,0,100,23.81,0.35,1,Tier 1 (100%),35,35
+[KuihLapis] Malay Images OCR (S1),MalayOCR-SICS-ImageQualityChecking-20260115-InvalidFormat-51Rows-v1,20260115,jy,JY,51,51,0,0,0,0,0,0.34,0,Tier 4 (0%),34,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Medium-331Rows,20260108,ainaruhana,AINA RUHANA BINTI ROSLAN,20,20,5,5,0,100,25,0.3333,1,Tier 1 (100%),33.33,33.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Medium-331Rows,20260108,munirah,Munirah binti Ramli,20,20,5,5,0,100,25,0.3333,1,Tier 1 (100%),33.33,33.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260103-ValidFormat-1632Rows,20260103,ooiruizhe,OOI RUI ZHE,150,150,32,30,2,93.75,21.33,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251229-V2-MalayOCR_663Rows,20251229,ainaruhana,AINA RUHANA BINTI ROSLAN,55,49,14,13,1,92.86,28.57,0.3267,1,Tier 1 (100%),32.67,32.67
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Medium-331Rows,20260108,fazilah,FAZILAH BINTI SALIM,20,19,5,4,1,80,26.32,0.3167,0.8,Tier 2 (80%),31.67,25.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Short-341Rows,20260111,fazilah,FAZILAH BINTI SALIM,20,17,5,5,0,100,29.41,0.2833,1,Tier 1 (100%),28.33,28.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260113-Medium-250Rows,20260113,fazilah,FAZILAH BINTI SALIM,60,17,4,3,1,75,23.53,0.2833,0.4,Tier 3 (40%),28.33,11.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260102-ValidFormat-1608Rows,20260102,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,75,39,11,11,0,100,28.21,0.26,1,Tier 1 (100%),26,26
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Long-75Rows,20260108,fazilah,FAZILAH BINTI SALIM,15,15,4,4,0,100,26.67,0.25,1,Tier 1 (100%),25,25
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Long-75Rows,20260108,munirah,Munirah binti Ramli,15,15,4,4,0,100,26.67,0.25,1,Tier 1 (100%),25,25
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260102-ValidFormat-1608Rows,20260102,ooiruizhe,OOI RUI ZHE,225,225,53,50,3,94.34,23.56,1.5,1,Tier 1 (100%),150,150
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260103-ValidFormat-1632Rows,20260103,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,75,37,8,8,0,100,21.62,0.2467,1,Tier 1 (100%),24.67,24.67
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260114-Medium-74Rows-v2,20260114,munirah,Munirah binti Ramli,14,14,3,3,0,100,21.43,0.2333,1,Tier 1 (100%),23.33,23.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Long-75Rows,20260108,ainaruhana,AINA RUHANA BINTI ROSLAN,15,13,4,4,0,100,30.77,0.2167,1,Tier 1 (100%),21.67,21.67
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Long-52Rows,20260111,ainaruhana,AINA RUHANA BINTI ROSLAN,11,11,5,5,0,100,45.45,0.1833,1,Tier 1 (100%),18.33,18.33
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251230-MalayOCR_551Rows,20251230,ooiruizhe,OOI RUI ZHE,150,150,31,31,0,100,20.67,1,1,Tier 1 (100%),100,100
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260113-Medium-250Rows,20260113,ainaruhana,AINA RUHANA BINTI ROSLAN,60,50,10,5,5,50,20,0.8333,0,Tier 4 (0%),83.33,0
+[KuihLapis] Malay Images OCR (S2-CS),[KuihLapis]MalayOCR-Stream2(CS)-20260107-415Row,20260107,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,75,10,3,3,0,100,30,0.1667,1,Tier 1 (100%),16.67,16.67
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Long-52Rows,20260111,fazilah,FAZILAH BINTI SALIM,10,10,5,5,0,100,50,0.1667,1,Tier 1 (100%),16.67,16.67
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260113-Short-115Rows,20260113,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,10,10,2,2,0,100,20,0.1667,1,Tier 1 (100%),16.67,16.67
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Long-52Rows,20260111,munirah,Munirah binti Ramli,10,10,5,5,0,100,50,0.1667,1,Tier 1 (100%),16.67,16.67
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251229-V2-MalayOCR_663Rows,20251229,ooiruizhe,OOI RUI ZHE,75,75,17,17,0,100,22.67,0.5,1,Tier 1 (100%),50,50
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251229-V2-MalayOCR_663Rows,20251229,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,75,15,3,3,0,100,20,0.1,1,Tier 1 (100%),10,10
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Long-52Rows,20260111,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,10,6,2,2,0,100,33.33,0.1,1,Tier 1 (100%),10,10
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260113-Medium-250Rows,20260113,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,20,5,1,1,0,100,20,0.0833,1,Tier 1 (100%),8.33,8.33
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Long-75Rows,20260108,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,15,3,2,2,0,100,66.67,0.05,1,Tier 1 (100%),5,5
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260112-Medium-61Rows-v5,20260112,munirah,Munirah binti Ramli,3,3,2,2,0,100,66.67,0.05,1,Tier 1 (100%),5,5
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260105-ValidFormat-716Rows,20260105,jy,JY,4,4,0,0,0,0,0,0.0267,0,Tier 4 (0%),2.67,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251230-MalayOCR_551Rows,20251230,jy,JY,3,3,0,0,0,0,0,0.02,0,Tier 4 (0%),2,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260103-ValidFormat-1632Rows,20260103,jy,JY,2,2,0,0,0,0,0,0.0133,0,Tier 4 (0%),1.33,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260102-ValidFormat-1608Rows,20260102,jy,JY,1,1,0,0,0,0,0,0.0067,0,Tier 4 (0%),0.67,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Short-341Rows,20260111,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,20,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Medium-331Rows,20260108,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,15,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260112-Short-228Rows-v5,20260112,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,30,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-S1(CS)-ImageQualityChecking-20260115-ValidFormat-1572Rows,20260115,afeefa,AFEEFA NAZNEEN BINTI BASHEER @ BASHEER AHMED,150,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251229-V2-MalayOCR_663Rows,20251229,qa2,QA2,1,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]20251229-V2-MalayOCR_663Rows,20251229,,,307,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260102-InvalidFormat-59Rows (FAILED CLUSTER),20260102,,,59,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260102-ValidFormat-1608Rows,20260102,,,933,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260103-ValidFormat-1632Rows,20260103,,,1107,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260104-ValidFormat-1110Rows,20260104,,,585,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-20260105-ValidFormat-716Rows,20260105,,,1,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-CS),[KuihLapis]MalayOCR-Stream2(CS)-20260107-415Row,20260107,,,43,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Medium-331Rows,20260108,,,236,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260108-Short,20260108,,,341,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Medium-309Rows,20260111,,,309,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260111-Short-341Rows,20260111,,,153,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-20260112-Medium-61Rows-v5,20260112,,,58,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S2-IM),MalayOCR-S2IN-Transcriptions-20260113-Short-115Rows,20260113,,,95,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0
+[KuihLapis] Malay Images OCR (S1),[KuihLapis]MalayOCR-S1(CS)-ImageQualityChecking-20260115-ValidFormat-1572Rows,20260115,,,672,0,0,0,0,0,0,0,0,Tier 4 (0%),0,0

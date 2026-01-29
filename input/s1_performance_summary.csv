@@ -1,4 +1,4 @@
-Project Name,NAME,S1-Assignee,Sum of total_submitted_uncorrupted,Sum of total_valid_format,Sum of total_valid_pass_count,Sum of total_valid_fail_count,Sum of total_invalid_format,Total Payable
+project_name,name,username,Sum of total_submitted_uncorrupted,Sum of total_valid_format,Sum of total_valid_pass_count,Sum of total_valid_fail_count,Sum of total_invalid_format,total_eligible_payment
 Kuih Lapis (Image Collection),Muhammad Adham Hizami bin Asma Zaki,adhamhizami,44,44,32,12,0,25.6
 Kuih Lapis (Image Collection),MUHAMMAD AQIL ZAFRAN BIN SHAHRUDDIN,aqilzafran,128,125,37,88,3,29.6
 Kuih Lapis (Image Collection),AULA HIDAYATI BINTI ABDUL HALIM,aulahidayati,363,363,213,150,0,170.4

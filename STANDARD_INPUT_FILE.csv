@@ -1,0 +1,4 @@
+role,name,username,email,project_name,dataset_name,date,total_assigned,total_completed,total_done_qa,total_qaflag_pass,total_qaflag_fail,accuracy_rate,qa_sample_rate,payment_tier,total_eligible_payment
+COMPULSORY,COMPULSORY,COMPULSORY,COMPULSORY,COMPULSORY,COMPULSORY,COMPULSORY,,,,,,,,Tier 1 (100%),
+ANNO,JOHN DOE,johndoe,youknowwho@example.com,PULL FROM API,PULL FROM API,PULL FROM API,,,,,,,,,
+QA,JOHN DOE,johndoe,youknowwho@example.com,PULL FROM API,PULL FROM API,PULL FROM API,,,,,,,,,
