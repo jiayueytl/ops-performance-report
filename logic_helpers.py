@@ -42,7 +42,13 @@ def get_invoice_context(df, name, task_period):
     """Prepares context for the Invoice Template."""
     person_df = df[df['name'] == name]
     # Pulls S1-Assignee for the ID format: INV/USERNAME/JAN26
-    username = str(person_df['username'].iloc[0]).upper()
+    # Check if any matching rows exist
+    if not person_df.empty:
+        username = str(person_df['username'].iloc[0]).upper()
+    else:
+        # Fallback if the person isn't found
+        username = "UNKNOWN"
+        
     total_payable = person_df['total_eligible_payment'].sum()
     safe_name = get_safe_name(name)
     
