@@ -45,7 +45,7 @@ REPORT_CONFIG = {
 }
 
 st.sidebar.title("🛠️ Pipeline Config")
-task_period = st.sidebar.text_input("Task Period", "1 Apr 2026 - 13 Apr 2026")
+task_period = st.sidebar.text_input("Task Period", "25 Mar 2026 - 13 Apr 2026")
 uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
 
 # 2. Source Selection Logic
