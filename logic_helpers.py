@@ -15,7 +15,7 @@ def process_data(df):
 
     # Inject fixed project name since it's not in the new CSV
     if 'project_name' not in df.columns:
-        df['project_name'] = 'OCR Image'
+        df['project_name'] = 'KuihLapis 2.0(Image Editing And Transcription)'
 
     # Remove the summary "Grand Total" row from the bottom of the CSV
     df = df[df['name'] != 'Grand Total']
