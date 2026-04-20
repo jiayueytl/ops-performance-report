@@ -45,7 +45,7 @@ S1_PERFORMANCE_REPORT = """
         .footer { margin-top: 60px; }
         .sig-line { margin-top: 60px; border-top: 1px solid #000; width: 250px; }
     </style>
-
+</head>
     <body>
         <div class="header-title">
             YTL AI LABS DATA ANNOTATION PROJECT<br>
@@ -59,37 +59,46 @@ S1_PERFORMANCE_REPORT = """
             <tr><td style="background-color: #f9f9f9; font-weight: bold;">Annotator</td><td>{{ name }}</td></tr>
         </table>
 
-        <p><b>Package Rate: RM0.80 (PER APPROVED IMAGE)</b></p>
+        <p><b>Package Rate: RM{{ payment_rate }} (PER APPROVED IMAGE)</b></p>
 
         <div class="summary-title">Summary of Quality Assurance Review</div>
         
         <table>
             <thead>
                 <tr>
-                    <th rowspan="2" style="width: 25%;">Project Name</th>
-                    <th rowspan="2" style="width: 15%;">Total Submitted<br>(Uncorrupted)</th>
-                    <th colspan="2" style="width: 30%;">Total Valid Format</th>
-                    <th rowspan="2" style="width: 15%;">Total Invalid<br>Format</th>
-                    <th rowspan="2" style="width: 15%;">Fee (RM)</th>
+                    <th rowspan="2" style="width: 15%;">Project Name</th>
+                    <th rowspan="2" style="width: 10%;">Grand Total</th>
+                    <th colspan="2" style="width: 15%;">Quality Metrics</th>
+                    <th colspan="3" style="width: 30%;">Error Breakdown</th>
+                    <th rowspan="2" style="width: 10%;">Passing Score</th>
+                    <th rowspan="2" style="width: 10%;">Tier</th>
+                    <th rowspan="2" style="width: 10%;">Fee (RM)</th>
                 </tr>
                 <tr>
-                    <th>Total Pass</th>
-                    <th>Total Fail</th>
+                    <th>Pass</th>
+                    <th>Fail</th>
+                    <th>Major</th>
+                    <th>Minor</th>
+                    <th>No Error</th>
                 </tr>
             </thead>
             <tbody>
                 {% for row in projects %}
                 <tr>
                     <td>{{ row['project_name'] }}</td>
-                    <td style="text-align: center;">{{ row['Sum of total_submitted_uncorrupted'] }}</td>
-                    <td style="text-align: center;">{{ row['Sum of total_valid_pass_count'] }}</td>
-                    <td style="text-align: center;">{{ row['Sum of total_valid_fail_count'] }}</td>
-                    <td style="text-align: center;">{{ row['Sum of total_invalid_format'] }}</td>
+                    <td style="text-align: center;">{{ row['Grand Total'] }}</td>
+                    <td style="text-align: center;">{{ row['PASS'] }}</td>
+                    <td style="text-align: center;">{{ row['FAIL'] }}</td>
+                    <td style="text-align: center;">{{ row['Major'] }}</td>
+                    <td style="text-align: center;">{{ row['Minor'] }}</td>
+                    <td style="text-align: center;">{{ row['No Error'] }}</td>
+                    <td style="text-align: center;">{{ row['Passing score'] }}</td>
+                    <td style="text-align: center;">{{ row['Tier'] }}</td>
                     <td style="text-align: right;">{{ "%.2f"|format(row['total_eligible_payment']|float) }}</td>
                 </tr>
                 {% endfor %}
                 <tr class="total-row">
-                    <td colspan="5" style="text-align: right;">Total Fee (RM)</td>
+                    <td colspan="9" style="text-align: right;">Total Fee (RM)</td>
                     <td style="text-align: right;">{{ "%.2f"|format(grand_total_fee|float) }}</td>
                 </tr>
             </tbody>
