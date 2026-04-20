@@ -66,20 +66,11 @@ S1_PERFORMANCE_REPORT = """
         <table>
             <thead>
                 <tr>
-                    <th rowspan="2" style="width: 15%;">Project Name</th>
-                    <th rowspan="2" style="width: 10%;">Grand Total</th>
-                    <th colspan="2" style="width: 15%;">Quality Metrics</th>
-                    <th colspan="3" style="width: 30%;">Error Breakdown</th>
-                    <th rowspan="2" style="width: 10%;">Passing Score</th>
-                    <th rowspan="2" style="width: 10%;">Tier</th>
-                    <th rowspan="2" style="width: 10%;">Fee (RM)</th>
-                </tr>
-                <tr>
-                    <th>Pass</th>
-                    <th>Fail</th>
-                    <th>Major</th>
-                    <th>Minor</th>
-                    <th>No Error</th>
+                    <th style="width: 40%;">Project Name</th>
+                    <th style="width: 15%;">Grand Total</th>
+                    <th style="width: 15%;">Passing Score</th>
+                    <th style="width: 15%;">Tier</th>
+                    <th style="width: 15%;">Fee (RM)</th>
                 </tr>
             </thead>
             <tbody>
@@ -87,18 +78,13 @@ S1_PERFORMANCE_REPORT = """
                 <tr>
                     <td>{{ row['project_name'] }}</td>
                     <td style="text-align: center;">{{ row['Grand Total'] }}</td>
-                    <td style="text-align: center;">{{ row['PASS'] }}</td>
-                    <td style="text-align: center;">{{ row['FAIL'] }}</td>
-                    <td style="text-align: center;">{{ row['Major'] }}</td>
-                    <td style="text-align: center;">{{ row['Minor'] }}</td>
-                    <td style="text-align: center;">{{ row['No Error'] }}</td>
                     <td style="text-align: center;">{{ row['Passing score'] }}</td>
                     <td style="text-align: center;">{{ row['Tier'] }}</td>
                     <td style="text-align: right;">{{ "%.2f"|format(row['total_eligible_payment']|float) }}</td>
                 </tr>
                 {% endfor %}
                 <tr class="total-row">
-                    <td colspan="9" style="text-align: right;">Total Fee (RM)</td>
+                    <td colspan="4" style="text-align: right;">Total Fee (RM)</td>
                     <td style="text-align: right;">{{ "%.2f"|format(grand_total_fee|float) }}</td>
                 </tr>
             </tbody>
@@ -108,7 +94,7 @@ S1_PERFORMANCE_REPORT = """
             <p>I acknowledge and agree with the reviewed performance and the corresponding fee stated above.</p>
             <p>Signed by,</p>
             <p>Full name: _______________________________<br>
-               NRIC no. : _______________________________</p>
+                NRIC no. : _______________________________</p>
         </div>
     </body>
 </html>
