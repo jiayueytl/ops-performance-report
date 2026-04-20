@@ -1,4 +1,5 @@
 S1_PERFORMANCE_REPORT = """
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,9 +68,9 @@ S1_PERFORMANCE_REPORT = """
             <thead>
                 <tr>
                     <th rowspan="2" style="width: 25%;">Project Name</th>
-                    <th rowspan="2" style="width: 15%;">Total Submitted<br>(Uncorrupted)</th>
+                    <th rowspan="2" style="width: 15%;">Requested Volume</th>
                     <th colspan="2" style="width: 30%;">Total Valid Format</th>
-                    <th rowspan="2" style="width: 15%;">Total Invalid<br>Format</th>
+                    <th rowspan="2" style="width: 15%;">Grand total</th>
                     <th rowspan="2" style="width: 15%;">Fee (RM)</th>
                 </tr>
                 <tr>
@@ -103,4 +104,5 @@ S1_PERFORMANCE_REPORT = """
         </div>
     </body>
 </html>
+
 """
