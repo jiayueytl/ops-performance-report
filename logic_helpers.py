@@ -31,7 +31,7 @@ def process_data(df):
         df['Sum of total_invalid_format'] = 0
 
     # Inject fixed project name
-    df['project_name'] = 'ImageOCR'
+    df['project_name'] = 'KuihLapis 2.0(Image Collection)'
 
     return df, df['name'].dropna().unique()
 
