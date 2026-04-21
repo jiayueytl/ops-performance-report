@@ -59,7 +59,7 @@ S1_PERFORMANCE_REPORT = """
             <tr><td style="background-color: #f9f9f9; font-weight: bold;">Annotator</td><td>{{ name }}</td></tr>
         </table>
 
-        <p><b>Package Rate: RM0.80 (PER APPROVED IMAGE)</b></p>
+        <p><b>Package Rate: RM0.80 (PER PASS IMAGE)</b></p>
 
         <div class="summary-title">Summary of Quality Assurance Review</div>
         
