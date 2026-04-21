@@ -28,7 +28,7 @@ INVOICE_TEMPLATE = """
     <table class="info-table">
         <tr>
             <td width="70%">
-                XXX<br>
+                {{ name }}<br>
                 XXX<br>
                 XXX<br>
                 XXX@XXX.XXX<br>
@@ -55,10 +55,16 @@ INVOICE_TEMPLATE = """
             </tr>
         </thead>
         <tbody>
+            {% for task in tasks %}
             <tr>
-                <td>Image Collection</td>
-                <td>{{ task_period }}</td>
-                <td>{{ "%.2f"|format(grand_total_fee|float) }}</td>
+                <td>{{ task.project }}</td>
+                <td>{{ task.period }}</td>
+                <td>{{ "%.2f"|format(task.amount|float) }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="2" style="text-align: right; font-weight: bold;">Grand Total:</td>
+                <td style="font-weight: bold;">{{ "%.2f"|format(grand_total_fee|float) }}</td>
             </tr>
         </tbody>
     </table>

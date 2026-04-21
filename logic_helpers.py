@@ -5,33 +5,15 @@ def process_data(df):
     """Cleans columns and identifies unique annotators."""
     df.columns = df.columns.str.strip()
 
-    # Fill empty numeric cells with 0 to prevent float conversion
-    cols_to_fix = ['PASS', 'FAIL', 'Grand Total', 'Requested volume']
-    for col in cols_to_fix:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int)
-
-    # Map Grand Total to the necessary template keys
-    if 'Grand Total' in df.columns:
-        df['Sum of total_invalid_format'] = df['Grand Total']
-        df['Sum of grand_total'] = df['Grand Total']
-
-    # Rename all CSV columns to match template field names
+    # Rename new CSV columns to match internal logic variables
     df = df.rename(columns={
-        'Image Collectors':      'name',
-        'Total Eligible Amount': 'total_eligible_payment',
-        'Requested volume':      'Sum of total_submitted_uncorrupted',
-        'PASS':                  'Sum of total_valid_pass_count',
-        'FAIL':                  'Sum of total_valid_fail_count',
-        'Passing rate':          'passing_rate',
+        'Annotators': 'name',
+        'amount': 'total_eligible_payment'
     })
 
-    # Ensure Invalid Format (Grand Total) exists
-    if 'Sum of total_invalid_format' not in df.columns:
-        df['Sum of total_invalid_format'] = 0
-
-    # Inject fixed project name
-    df['project_name'] = 'KuihLapis 2.0(Image Collection)'
+    # Ensure payment is a numeric value
+    if 'total_eligible_payment' in df.columns:
+        df['total_eligible_payment'] = pd.to_numeric(df['total_eligible_payment'], errors='coerce').fillna(0.0)
 
     return df, df['name'].dropna().unique()
 
@@ -67,7 +49,7 @@ def get_performance_context(df, name, task_period):
     }
 
 def get_invoice_context(df, name, task_period):
-    """Prepares context for the Invoice templates."""
+    """Prepares context for the Invoice templates, grouping multiple tasks."""
     person_df = df[df['name'] == name]
 
     username     = str(name).upper() if not person_df.empty else "UNKNOWN"
@@ -76,28 +58,22 @@ def get_invoice_context(df, name, task_period):
     safe_name          = get_safe_name(name)
     current_month_year = datetime.now().strftime("%b%y").upper()
 
-    def _get(col, cast=str):
-        if not person_df.empty and col in person_df.columns:
-            val = person_df[col].iloc[0]
-            try:
-                return cast(val)
-            except Exception:
-                return val
-        return 0 if cast in (int, float) else "—"
+    # Build a list of tasks for the Jinja loop
+    tasks = []
+    for _, row in person_df.iterrows():
+        tasks.append({
+            "project": row.get("project", "Unknown Project"),
+            "period": row.get("period", task_period),
+            "amount": row.get("total_eligible_payment", 0.0)
+        })
 
     return {
         "ctx": {
             "invoice_id":        f"INV/{username}/{current_month_year}",
             "report_date":       datetime.now().strftime("%d-%b-%Y"),
-            "task_period":       task_period,
             "name":              safe_name,
-            "grand_total_fee":   total_payable,
-            "requested_volume":  _get('Sum of total_submitted_uncorrupted', int),
-            "pass_count":        _get('Sum of total_valid_pass_count', int),
-            "fail_count":        _get('Sum of total_valid_fail_count', int),
-            "invalid_format":    _get('Sum of total_invalid_format', int),
-            "grand_total_count": _get('Sum of grand_total', int),
-            "passing_rate":      _get('passing_rate', str),
+            "tasks":             tasks,             # NEW: Passes the grouped rows
+            "grand_total_fee":   total_payable      # NEW: Passes the sum
         },
         "filename": f"{safe_name}_Invoice_{current_month_year}.pdf"
     }
