@@ -23,12 +23,12 @@ st.set_page_config(layout="wide", page_title="DataAnno Ops Reporting")
 # This dictionary maps a "Report Type" to its Template and Logic Script
 REPORT_CONFIG = {
     "Performance Report(S1)": {
-        "template": INVOICE_TEMPLATE,
+        "template": S1_PERFORMANCE_REPORT,
         "logic_func": get_performance_context,
         "prefix": "Perf"
     },
     "Performance Report(S2)": {
-        "template": INVOICE_TEMPLATE_TASKREVIEW,
+        "template": S2_PERFORMANCE_REPORT,
         "logic_func": get_performance_context,
         "prefix": "Perf"
     },
