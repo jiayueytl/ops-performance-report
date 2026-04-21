@@ -1,5 +1,4 @@
 S1_PERFORMANCE_REPORT = """
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +17,7 @@ S1_PERFORMANCE_REPORT = """
         }
         
         table {
-            width: 100%;
+            width: 100%; 
             border-collapse: collapse; 
             margin-bottom: 20px;
         }
@@ -46,7 +45,7 @@ S1_PERFORMANCE_REPORT = """
         .footer { margin-top: 60px; }
         .sig-line { margin-top: 60px; border-top: 1px solid #000; width: 250px; }
     </style>
-
+</head>
     <body>
         <div class="header-title">
             YTL AI LABS DATA ANNOTATION PROJECT<br>
@@ -67,11 +66,10 @@ S1_PERFORMANCE_REPORT = """
         <table>
             <thead>
                 <tr>
-                    <th rowspan="2" style="width: 25%;">Project Name</th>
-                    <th rowspan="2" style="width: 15%;">Requested Volume</th>
-                    <th colspan="2" style="width: 30%;">Total Valid Format</th>
-                    <th rowspan="2" style="width: 15%;">Grand total</th>
-                    <th rowspan="2" style="width: 15%;">Fee (RM)</th>
+                    <th rowspan="2" style="width: 30%;">Project Name</th>
+                    <th rowspan="2" style="width: 15%;">Total images</th>
+                    <th colspan="2" style="width: 35%;">Quality Metrics</th>
+                    <th rowspan="2" style="width: 20%;">Fee (RM)</th>
                 </tr>
                 <tr>
                     <th>Total Pass</th>
@@ -82,15 +80,14 @@ S1_PERFORMANCE_REPORT = """
                 {% for row in projects %}
                 <tr>
                     <td>{{ row['project_name'] }}</td>
-                    <td style="text-align: center;">{{ row['Sum of total_submitted_uncorrupted'] }}</td>
+                    <td style="text-align: center;">{{ row['Sum of total_invalid_format'] }}</td>
                     <td style="text-align: center;">{{ row['Sum of total_valid_pass_count'] }}</td>
                     <td style="text-align: center;">{{ row['Sum of total_valid_fail_count'] }}</td>
-                    <td style="text-align: center;">{{ row['Sum of total_invalid_format'] }}</td>
                     <td style="text-align: right;">{{ "%.2f"|format(row['total_eligible_payment']|float) }}</td>
                 </tr>
                 {% endfor %}
                 <tr class="total-row">
-                    <td colspan="5" style="text-align: right;">Total Fee (RM)</td>
+                    <td colspan="4" style="text-align: right;">Total Fee (RM)</td>
                     <td style="text-align: right;">{{ "%.2f"|format(grand_total_fee|float) }}</td>
                 </tr>
             </tbody>
@@ -104,5 +101,4 @@ S1_PERFORMANCE_REPORT = """
         </div>
     </body>
 </html>
-
 """
