@@ -68,7 +68,7 @@ if df is not None:
     active_template = current_cfg["template"]
     active_logic = current_cfg["logic_func"]
 
-    tab1, tab2 = st.tabs(["🔍 Preview & Edit", "🚀 Bulk Export"])
+    tab1, tab2 = st.tabs(["123123123123", "123123123312"])
 
     # --- TAB 1: PREVIEW & LIVE EDIT ---
     with tab1:
