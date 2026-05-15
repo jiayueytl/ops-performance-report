@@ -16,7 +16,7 @@ from templates.S1_PERFORMANCE_REPORT import S1_PERFORMANCE_REPORT
 from templates.S2_PERFORMANCE_REPORT import S2_PERFORMANCE_REPORT
 from templates.INVOICE_TEMPLATE import INVOICE_TEMPLATE
 from templates.INVOICE_TEMPLATE_TASKREVIEW import INVOICE_TEMPLATE_TASKREVIEW
-
+from templates.ILMU_RESEARCH import ILMU_RESEARCH
 st.set_page_config(layout="wide", page_title="DataAnno Ops Reporting")
 
 # --- 1. CONFIGURATION & REGISTRY ---
@@ -41,6 +41,11 @@ REPORT_CONFIG = {
         "template": INVOICE_TEMPLATE_TASKREVIEW,
         "logic_func": get_invoice_context,
         "prefix": "Inv"
+    },
+    "ilmu_research" : {
+        "template" : ILMU_RESEARCH ,
+        "logic_func" : get_invoice_context , 
+        "prefix" : "Inv"
     }
 }
 

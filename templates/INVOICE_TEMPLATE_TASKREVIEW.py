@@ -58,9 +58,9 @@ INVOICE_TEMPLATE_TASKREVIEW = """
         </thead>
         <tbody>
             <tr>
-                <td>{{ project_name }}</td>
-                <td>{{ task_type }}</td>
-                <td>{{ task_period }}</td>
+                <td>Laksa</td>
+                <td>Prompt and Responses evaluation</td>
+                <td>13 May 2026</td>
                 <td>{{ "%.2f"|format(grand_total_fee|float) }}</td>
             </tr>
         </tbody>
