@@ -65,9 +65,9 @@ INVOICE_TEMPLATE = """
 
     <div class="bank-details">
         <p><strong>Please make all checks payable to:</strong></p>
-        <p>Full Name of Account Holder: (Your Full Name of Account Holder)</p>
-        <p>Bank name: (Your Bank name)</p>
-        <p>Bank account number: (Your Bank account number)</p>
+        <p>Full Name of Account Holder: {{ bank_acc_holder }}</p>
+        <p>Bank name: {{ bank_name }}</p>
+        <p>Bank account number: {{ bank_acc_num }}</p>
     </div>
 
     <div class="thank-you">Thank you!</div>

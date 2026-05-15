@@ -28,14 +28,15 @@ INVOICE_TEMPLATE_TASKREVIEW = """
     <table class="info-table">
         <tr>
             <td width="70%">
-                XXX<br>
-                XXX<br>
-                XXX<br>
-                XXX@XXX.XXX<br>
-                +60 XX-XX
+                {{address_1}}<br>
+                {{address_2}}<br>
+                {{address_3}}<br>
+                {{email}}<br>
+                {{phone_number}}
             </td>
             <td width="30%" style="text-align: left;">
                 <b>Invoice No:</b> {{ invoice_id }}<br>
+                <b>Quotation No:</b> {{ quotation_number }}<br>
                 <b>Date:</b> {{ report_date }}<br>
                 <b>To:</b><br>
                 YTL AI Labs Sdn. Bhd.<br>
@@ -49,6 +50,7 @@ INVOICE_TEMPLATE_TASKREVIEW = """
     <table class="main-table">
         <thead>
             <tr>
+                <th>Project Name</th>
                 <th>Task Type</th>
                 <th>Project Period</th>
                 <th>Amount (RM)</th>
@@ -56,7 +58,8 @@ INVOICE_TEMPLATE_TASKREVIEW = """
         </thead>
         <tbody>
             <tr>
-                <td>Review and Rewriting</td>
+                <td>{{ project_name }}</td>
+                <td>{{ task_type }}</td>
                 <td>{{ task_period }}</td>
                 <td>{{ "%.2f"|format(grand_total_fee|float) }}</td>
             </tr>
@@ -65,9 +68,9 @@ INVOICE_TEMPLATE_TASKREVIEW = """
 
     <div class="bank-details">
         <p><strong>Please make all checks payable to:</strong></p>
-        <p>Full Name of Account Holder: (Your Full Name of Account Holder)</p>
-        <p>Bank name: (Your Bank name)</p>
-        <p>Bank account number: (Your Bank account number)</p>
+        <p>Full Name of Account Holder: {{ bank_acc_holder }}</p>
+        <p>Bank name: {{ bank_name }}</p>
+        <p>Bank account number: {{ bank_acc_num }}</p>
     </div>
 
     <div class="thank-you">Thank you!</div>
