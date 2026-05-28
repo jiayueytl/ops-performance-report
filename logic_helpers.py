@@ -87,10 +87,10 @@ def get_invoice_context(df, name, ui_task_period):
     return {
         "ctx": {
             "email": get_val('email', 'xxx@xxx.com'),
-            "phone_number": str(get_val('phone_number', '601X-XXXX XXXX')).replace('.0', ''),
-            "address_1": "",
-            "address_2": "",
-            "address_3": "",
+            "phone_number"    : str(get_val('phone_number', '601X-XXXX XXXX')).replace('.0', ''),
+            "address"         : get_val('address', 'XXX,'),
+            "address_2"       : get_val('address', 'XXX,'),
+            "address_3"       : get_val('address', 'XXX,'),
             "invoice_id": invoice_id,
             "quotation_number": quotation_number,
             "project_name": project_name,
