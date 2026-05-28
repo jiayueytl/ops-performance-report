@@ -116,14 +116,14 @@ QUOTATION = """
             <td class="label">:</td>
             <td>
                 <span class="label">{{ name }}</span><br>
-                {% if address and address not in ('', 'XXX') %}{{ address }}{% endif %}
+                {{ address }}
             </td>
         </tr>
         {% if phone_number and phone_number not in ('', '601X-XXXX XXXX') %}
         <tr>
             <td class="label">Tel</td>
             <td class="label">:</td>
-            <td>{{ phone_number }}</td>
+            <td>60{{ phone_number }}</td>
         </tr>
         {% endif %}
     </table>
@@ -153,7 +153,7 @@ QUOTATION = """
     <table class="meta-table">
       <tr>
         <td style="font-weight: bold;">Quotation Number</td><td>:</td>
-        <td>{{ name }}/46124</td>
+        <td>{{ name }}/46170</td>
       </tr>
       <tr>
         <td style="font-weight: bold;">Quotation Date</td><td>:</td>
@@ -183,21 +183,21 @@ QUOTATION = """
       <td>1</td>
       <td>Prompt and Responses evaluation</td>
       <td>1</td>
-      <td>24</td>
+      <td>12</td>
       <td style="text-align: center;">3.33</td>
-      <td style="text-align: center;">80.00</td>
+      <td style="text-align: center;">40.00</td>
     </tr>
   </tbody>
   <tfoot>
     <tr>
       <td colspan="4" class="spacer" style="border:none;"></td>
       <td class="lbl">Subtotal :</td>
-      <td class="val">80.00</td>
+      <td class="val">40.00</td>
     </tr>
     <tr>
       <td colspan="4" class="spacer" style="border:none;"></td>
       <td class="lbl">Total :</td>
-      <td class="val">80.00</td>
+      <td class="val">40.00</td>
     </tr>
   </tfoot>
 </table>
