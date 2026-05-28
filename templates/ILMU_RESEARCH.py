@@ -1,4 +1,5 @@
 ILMU_RESEARCH = """
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,7 +61,7 @@ ILMU_RESEARCH = """
   .items-table tfoot tr td { border: 1px solid #000; padding: 6px 10px; }
   .items-table tfoot .spacer { border: none; }
   .items-table tfoot .lbl   { text-align: right; font-weight: bold; white-space: nowrap; }
-  .items-table tfoot .val { text-align: right; }
+  .items-table tfoot .val { text-align: center; }
   .items-table tfoot tr:last-child .lbl,
   .items-table tfoot tr:last-child .val { font-weight: bold; }
 
@@ -129,7 +130,6 @@ ILMU_RESEARCH = """
     </table>
   </div>
 </div>
-
 <div class="contact-row">
   <div class="col">
     <table class="align-table">
@@ -167,7 +167,7 @@ ILMU_RESEARCH = """
     </table>
   </div>
 </div>
-
+<br>
 <table class="items-table">
   <thead>
     <tr>
@@ -175,8 +175,8 @@ ILMU_RESEARCH = """
       <th>Item Description</th>
       <th style="width:75px;">Quantity</th>
       <th style="width:50px;">Unit</th>
-      <th style="width:85px; text-align:right;">Unit Price<br>(RM)</th>
-      <th style="width:85px; text-align:right;">Total<br>(RM)</th>
+      <th style="width:85px; text-align:center;">Unit Price<br>(RM)</th>
+      <th style="width:85px; text-align:center;">Total<br>(RM)</th>
     </tr>
   </thead>
   <tbody>
@@ -184,21 +184,21 @@ ILMU_RESEARCH = """
       <td>1</td>
       <td>Prompt and Responses evaluation</td>
       <td>1</td>
-      <td>{{ quantity }}</td>
-      <td style="text-align: right;">2.00</td>
-      <td style="text-align: right;">{{ "%.2f"|format(grand_total_fee|float) }}</td>
+      <td>25</td>
+      <td style="text-align: center;">2.00</td>
+      <td style="text-align: center;">50.00</td>
     </tr>
   </tbody>
   <tfoot>
     <tr>
       <td colspan="4" class="spacer" style="border:none;"></td>
       <td class="lbl">Subtotal :</td>
-      <td class="val">{{ "%.2f"|format(grand_total_fee|float) }}</td>
+      <td class="val">50.00</td>
     </tr>
     <tr>
       <td colspan="4" class="spacer" style="border:none;"></td>
       <td class="lbl">Total :</td>
-      <td class="val">{{ "%.2f"|format(grand_total_fee|float) }}</td>
+      <td class="val">50.00</td>
     </tr>
   </tfoot>
 </table>
@@ -224,9 +224,10 @@ ILMU_RESEARCH = """
   </ul>
 </div>
 
+<br>
 <table style="width:100%; margin-top:25px; font-size:11pt; font-family: 'Aptos', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;">
   <tr>
-    <td style="width:50%; text-align: left; padding-left: 5%;">
+    <td style="width:50%; text-align: left; padding-left: 0;">
       <div style="width: 80%;">
         <div style="margin-bottom: 120px; font-weight: bold;">Issued by,</div>
         <div style="border-top: 1px solid #000;"></div>
@@ -245,4 +246,5 @@ ILMU_RESEARCH = """
 
 </body>
 </html>
+
 """

@@ -28,16 +28,16 @@ INVOICE_TEMPLATE_TASKREVIEW = """
     <table class="info-table">
         <tr>
             <td width="70%">
-                {{address_1}}<br>
-                {{address_2}}<br>
-                {{address_3}}<br>
+                XXX<br>
+                XXX<br>
+                XXX<br>
                 {{email}}<br>
                 {{phone_number}}
             </td>
             <td width="30%" style="text-align: left;">
                 <b>Invoice No:</b> {{ invoice_id }}<br>
                 <b>Quotation No:</b> {{ quotation_number }}<br>
-                <b>Date:</b> {{ report_date }}<br>
+                <b>Date:</b> 18 May 2026<br>
                 <b>To:</b><br>
                 YTL AI Labs Sdn. Bhd.<br>
                 15th Floor, Menara YTL,<br>
@@ -60,7 +60,7 @@ INVOICE_TEMPLATE_TASKREVIEW = """
             <tr>
                 <td>Laksa</td>
                 <td>Prompt and Responses evaluation</td>
-                <td>13 May 2026</td>
+                <td>12 May 2026 - 13 May 2026</td>
                 <td>{{ "%.2f"|format(grand_total_fee|float) }}</td>
             </tr>
         </tbody>
