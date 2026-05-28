@@ -2,10 +2,20 @@ import pandas as pd
 from datetime import datetime
 
 def process_data(df):
-    """Cleans columns and identifies unique annotators."""
-    df.columns = df.columns.str.strip()
-    return df, df['name'].unique()
+    df.columns = df.columns.str.strip().str.replace('\ufeff', '', regex=False)
+    col_map = {col: col.lower().replace(' ', '_') for col in df.columns}
+    df = df.rename(columns=col_map)
+    
+    import streamlit as st
+    st.write("DEBUG columns:", df.columns.tolist())  # ADD THIS
+    
+    df = df.rename(columns={
+        'completed_task': 'total_completed',
+        'completion_percentage': 'completion_percentage',
+        'payment_(rm80_for_full_package)': 'total_eligible_payment'
+    })
 
+    return df, df['name'].unique()
 def get_safe_name(name):
     safe_name = str(name).upper()
     safe_name = safe_name.replace('/','')
