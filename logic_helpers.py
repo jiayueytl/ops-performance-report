@@ -103,5 +103,5 @@ def get_invoice_context(df, name, ui_task_period):
             "bank_name": get_val('bank_name', '(Your Bank name)'),
             "bank_acc_num": get_val('bank_acc_num', '(Your Bank account number)')
         },
-        "filename": f"{safe_name}_Invoice_{current_month_year}.pdf"
+        "filename": f"{safe_name}_Quotation_{current_month_year}.pdf"
     }

@@ -1,4 +1,5 @@
 INVOICE_TEMPLATE_TASKREVIEW = """
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,28 +26,31 @@ INVOICE_TEMPLATE_TASKREVIEW = """
 <body>
     <div class="invoice-header">INVOICE</div>
 
-    <table class="info-table">
-        <tr>
-            <td width="70%">
-                XXX<br>
-                XXX<br>
-                XXX<br>
-                {{email}}<br>
-                60{{phone_number}}
-            </td>
-            <td width="30%" style="text-align: left;">
-                <b>Invoice No:</b> {{ invoice_id }}<br>
-                <b>Quotation No:</b> {{ name }}/46170 <br>
-                <b>Date:</b> 28 May 2026<br>
-                <b>To:</b><br>
-                YTL AI Labs Sdn. Bhd.<br>
-                15th Floor, Menara YTL,<br>
-                205 Jalan Bukit Bintang,<br>
-                55100 Kuala Lumpur.
-            </td>
-        </tr>
-    </table>
-
+   <table class="info-table">
+    <tr>
+        <td width="70%">
+            <div style="max-width: 320px; word-wrap: break-word; line-height: 1.6;">
+                {% if address and address not in ('', 'XXX,') %}
+                    {{ address }}<br>
+                {% else %}
+                    XXX<br>
+                {% endif %}
+                {{ email }}<br>
+                60{{ phone_number }}
+            </div>
+        </td>
+        <td width="30%" style="text-align: left;">
+            <b>Invoice No:</b> {{ invoice_id }}<br>
+            <b>Quotation No:</b> {{ name }}/46170 <br>
+            <b>Date:</b> 28 May 2026<br>
+            <b>To:</b><br>
+            YTL AI Labs Sdn. Bhd.<br>
+            15th Floor, Menara YTL,<br>
+            205 Jalan Bukit Bintang,<br>
+            55100 Kuala Lumpur.
+        </td>
+    </tr>
+</table>
     <table class="main-table">
         <thead>
             <tr>
@@ -76,4 +80,5 @@ INVOICE_TEMPLATE_TASKREVIEW = """
     <div class="thank-you">Thank you!</div>
 </body>
 </html>
+
 """
