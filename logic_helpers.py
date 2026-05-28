@@ -3,18 +3,22 @@ from datetime import datetime
 
 def process_data(df):
     """Cleans columns and identifies unique annotators."""
-    df.columns = df.columns.str.strip()
-    
-    # Rename columns to match internal naming convention
+    # Strip whitespace and BOM characters
+    df.columns = df.columns.str.strip().str.replace('\ufeff', '', regex=False)
+
+    # Normalize all columns to lowercase + underscores
+    df.columns = df.columns.str.lower().str.replace(' ', '_', regex=False).str.replace(r'[().]', '', regex=True)
+
+    # Rename to internal names
     df = df.rename(columns={
-        'name': 'name',
-        'email': 'email',
-        'assign_task': 'assign_task',
-        'Completed task': 'total_completed',
-        'Completion percentage': 'completion_percentage',
-        'Payment (RM80 for full package)': 'total_eligible_payment'
+        'completed_task': 'total_completed',
+        'completion_percentage': 'completion_percentage',
+        'payment_rm80_for_full_package': 'total_eligible_payment'
     })
-    
+
+    if 'name' not in df.columns:
+        raise ValueError(f"❌ 'name' column not found. Available columns: {df.columns.tolist()}")
+
     return df, df['name'].unique()
 
 def get_safe_name(name):
