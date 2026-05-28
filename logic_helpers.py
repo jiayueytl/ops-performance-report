@@ -13,7 +13,10 @@ def process_data(df):
     df = df.rename(columns={
         'completed_task': 'total_completed',
         'completion_percentage': 'completion_percentage',
-        'payment_rm80_for_full_package': 'total_eligible_payment'
+        'payment_rm80_for_full_package': 'total_eligible_payment',
+        'tel': 'phone_number',
+        'add': 'address_1',
+        'nric_number': 'nric_number'
     })
 
     if 'name' not in df.columns:
@@ -55,7 +58,6 @@ def get_performance_context(df, name, task_period):
 
 
 from datetime import datetime
-import pandas as pd
 
 def get_invoice_context(df, name, ui_task_period):
     """Prepares context for the Invoice Template."""
@@ -67,40 +69,28 @@ def get_invoice_context(df, name, ui_task_period):
     if person_df.empty:
         return {"error": "User not found"}
 
-    # Helper to get first value if column exists and isn't null, else return default
     def get_val(col_name, default):
         if col_name in person_df.columns:
             val = person_df[col_name].iloc[0]
             return val if pd.notnull(val) and val != "" else default
         return default
 
-    # 1. Determine Username
     username = str(get_val('username', name)).upper()
-
-    # 2. Invoice ID Logic: Use existing or Auto-generate
     invoice_id = get_val('invoice_id', f"INV/{username}/{current_month_year}")
-
-    # 3. Task Period Logic
     task_period = get_val('task_period', ui_task_period)
-
-    # 4. Project Name Logic
     project_name = get_val('project_name', "Task Review and Rewrite")
     task_type = get_val('task_type', "Task Review and Rewrite")
-
-    # 5. Quotation Number
     quotation_number = get_val('quotation_number', "")
-
-    # 6. Calculations and Formatting
     total_payable = person_df['total_eligible_payment'].sum() if 'total_eligible_payment' in person_df.columns else 0
     safe_name = get_safe_name(name)
     
     return {
         "ctx": {
             "email": get_val('email', 'xxx@xxx.com'),
-            "phone_number": get_val('phone_number', '601X-XXXX XXXX'),
-            "address_1": get_val('address_1', 'XXX,'),
-            "address_2": get_val('address_2', 'XXX,'),
-            "address_3": get_val('address_3', 'XXX,'),
+            "phone_number": str(get_val('phone_number', '601X-XXXX XXXX')).replace('.0', ''),
+            "address_1": "",
+            "address_2": "",
+            "address_3": "",
             "invoice_id": invoice_id,
             "quotation_number": quotation_number,
             "project_name": project_name,
@@ -113,6 +103,5 @@ def get_invoice_context(df, name, ui_task_period):
             "bank_name": get_val('bank_name', '(Your Bank name)'),
             "bank_acc_num": get_val('bank_acc_num', '(Your Bank account number)')
         },
-        
         "filename": f"{safe_name}_Invoice_{current_month_year}.pdf"
     }
