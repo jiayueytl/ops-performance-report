@@ -36,7 +36,7 @@ INVOICE_TEMPLATE_TASKREVIEW = """
             </td>
             <td width="30%" style="text-align: left;">
                 <b>Invoice No:</b> {{ invoice_id }}<br>
-                <b>Quotation No:</b> {{ name }}/46170<br>
+                <b>Quotation No:</b> {{ name }}/46170 <br>
                 <b>Date:</b> 28 May 2026<br>
                 <b>To:</b><br>
                 YTL AI Labs Sdn. Bhd.<br>
