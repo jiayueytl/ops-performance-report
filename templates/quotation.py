@@ -181,7 +181,7 @@ QUOTATION = """
   <tbody>
     <tr>
       <td>1</td>
-      <td>Prompt and Responses evaluation</td>
+      <td>JomMakan</td>
       <td>1</td>
       <td>12</td>
       <td style="text-align: center;">3.33</td>

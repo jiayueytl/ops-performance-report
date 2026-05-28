@@ -15,7 +15,7 @@ def process_data(df):
         'completion_percentage': 'completion_percentage',
         'payment_rm80_for_full_package': 'total_eligible_payment',
         'tel': 'phone_number',
-        'add': 'address_1',
+        'add': 'address',
         'nric_number': 'nric_number'
     })
 
@@ -78,8 +78,8 @@ def get_invoice_context(df, name, ui_task_period):
     username = str(get_val('username', name)).upper()
     invoice_id = get_val('invoice_id', f"INV/{username}/{current_month_year}")
     task_period = get_val('task_period', ui_task_period)
-    project_name = get_val('project_name', "Task Review and Rewrite")
-    task_type = get_val('task_type', "Task Review and Rewrite")
+    project_name = get_val('project_name', "JomMakan")
+    task_type = get_val('task_type', "restaurant curation")
     quotation_number = get_val('quotation_number', "")
     total_payable = person_df['total_eligible_payment'].sum() if 'total_eligible_payment' in person_df.columns else 0
     safe_name = get_safe_name(name)
